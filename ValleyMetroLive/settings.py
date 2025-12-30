@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'folium',
     'PIL',
+    'dotenv',
     'vmlivemap.apps.VmalertsConfig',
 ]
 

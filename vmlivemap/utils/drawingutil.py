@@ -18,3 +18,8 @@ def draw_vehicle_marker(point):
     if point['vehicle_type'] == 'bus':
         popup_text = popup_text + "\n" + "Speed: " + str(round(point['speed'])) + "mph"
     return folium.Marker(location=point['location'], icon=icon, popup=popup_text)
+
+def draw_bus_stop(stop):
+    icon = folium.Icon(color='green')
+    popup_text = f"Stop {stop['stop_id']} \n {stop['name']} \n The current temperature is {stop['weather_f']}F"
+    return folium.Marker(location=stop['location'], icon=icon, popup=popup_text)
