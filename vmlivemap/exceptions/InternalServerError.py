@@ -1,0 +1,2 @@
+class InternalServiceError(Exception):
+    pass
