@@ -2,3 +2,4 @@ __pycache __/
 /vmlivemap/static/vmlivemap/image/generated_image/
 .idea/
 .env
+.iml
